@@ -1,0 +1,425 @@
+/*selects all content, alternative to padding for more accuracy*/
+*{
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;		/*ensures smooth scrolling throughout the website*/
+}
+
+
+
+
+
+
+/* selects all images and normalizes them across the board*/
+img {
+	max-width:100%;
+	height: auto;
+	
+}
+
+body{
+	margin:0;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.2rem;
+	text-align:center;
+	color:rgb(60,60,60);
+}
+
+h1{
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	max-width:80em;
+
+	
+	
+}
+
+.title{
+	
+	font-size: 2rem;
+	font-weight: 500;
+	
+}
+.title span{					/*individual emphases on the name*/
+	font-size: 3rem;
+	display : block;
+	font-weight: 800;
+	color:#5F9EA0;
+}
+
+@media (min-width:60rem){
+	.title{
+		font-size :2.5rem;
+	}
+	
+	
+}
+
+
+
+
+/* header */
+header{
+	position: absolute;
+	width: 100%;
+	margin-top:1em; /* I'll be prodominently using EM and REM as PX is quite ignorant  */ 
+	
+}
+/*nav bar*/
+.nav_menu{
+	width:100vw;
+	height:7em;
+	position:fixed;
+	z-index: 1000;
+	top:0;
+	left:0;
+	background-color:grey;
+	opacity:0.95;
+
+}
+
+.nav_menu ul{
+	list-style:none;		/*makes list not use dots, usefull for making nav look clean*/
+	padding:0;
+	margin:0;
+		
+	
+}
+.nav_menu ul li{
+	display:inline-block;
+	line-height:60px;
+	
+}
+.nav_menu ul li a{
+	
+	font-weight:700;
+	padding: 1em;
+	color:rgb(60,60,60);
+	text-decoration: none;
+	text-transform : uppercase;
+	font-size: 1rem;
+	transition:all .3s ease-in-out;
+
+	
+}
+
+
+.nav_name{
+	text-decoration: underline;
+	position:fixed;
+	top:0;
+	left:75vw;
+
+}
+/*Hamburger icon and sidebar customization*/
+.ham_menu{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+
+}
+
+.ham_side{
+	display:none;
+	width:100vw;
+	height:3.15em;
+	position:fixed;
+	z-index: 1000;
+	top:0;
+	left:0;
+	background-color:grey;
+	opacity:0.95;
+	transition:all .2s ease-in-out;
+
+	
+}
+.ham_name{
+	text-decoration: underline;
+}
+
+.ham_side ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:hidden;
+	visibility:hidden;
+
+}
+.ham_side ul li a{
+	white-space:nowrap;	
+	font-weight:700;
+	padding: 3px;
+	color:rgb(60,60,60);
+	text-decoration: none;
+	text-transform : uppercase;
+	font-size: 1rem;
+	opacity:0;
+	transition:all 0.3s ease-in-out;
+}
+
+
+ i.fas:hover, i.fab:hover{
+	 color:rgb(60,60,60) ;
+	
+}
+
+
+@media (max-width:45.625em){
+		.nav_menu{
+		display:none;
+	}
+		.ham_menu{
+		display:inline-block;
+	}
+
+	.ham_side{
+		display:inline-block;
+	}
+	.btn_ham{
+		visibility: visible;
+	}
+	.ham_name{
+		visibility:visible;
+	}
+}
+
+@media (min-width:60em){		/*When screensize is more than 60 rem(960px) change the layout of the front screen*/
+
+	
+}
+.nav_menu a:hover, .nav_menu:focus{
+	color: #ADD8E6;
+	
+}
+.ham_side a:hover, .ham_side:focus{
+	color: #ADD8E6;
+}
+
+
+
+
+/* Section-Home */
+
+.sec_home{
+	background-image: url(../images/homebg.jpg);
+	background-size: cover;
+	background-position:center;
+	padding: 10em 0;
+	color:rgb(60,60,60);
+}
+@media (min-width:60rem){		/*When screensize is more than 60 rem(960px) change the layout of the front screen*/
+	.sec_home {
+		height:100vh;
+		padding-top: 35vh;
+		
+	}	
+}
+.bio span{
+	color:#5F9EA0;
+	
+}
+
+
+/*section about*/
+	.sec_about{	
+	}
+
+.sec_about h1{
+	color:rgb(60, 60, 60);
+	text-shadow: 2px 2px 4px rgb(150, 150, 150);
+	font-size:2em;
+	font-weight:600;
+}
+.sec_about h1:after{
+		content: " ";
+		display:block;
+		margin:0 auto;
+		width:5%;
+		padding-top:-3px;
+		border-bottom: 2px solid rgb(255, 99, 71);
+}
+
+
+
+/*section skills*/
+#bgdSkills{
+	background-image:linear-gradient(to bottom, rgba(255, 99, 71, 0.5), rgba(238, 130, 238, 0.8)), url(../images/skillsbackground.jpg);				/*used to apply a gradient similair to home image*/
+	background-position:center;
+	background-size:cover;
+	background-blend-mode:lighten;				/*used to lighten the background image.*/
+	}
+
+
+
+.sec_skills{
+		display:inline-block;
+		margin:0;
+		padding:0;
+}
+
+.sec_skills h1{
+		color:#5F9EA0;
+		text-shadow: 4px 4px 8px rgb(50, 50, 50);
+		font-size:2em;
+		font-weight:600;	
+}
+
+.sec_skills h1:after{
+		content: " ";
+		display:block;
+		margin:0 auto;
+		width:25%;
+		padding-top:-3px;
+		border-bottom: 2px solid rgb(60, 60, 60);
+}
+
+.sec_skills ul{
+	margin:0;
+	padding:0;
+	list-style:none;  
+}
+
+.sec_skills li{
+	display: inline-block; 
+	margin: 1em;
+}
+
+.skills_pics{
+	margin:0;
+	position:relative;
+	display:inline-block;
+	
+}
+
+.skillsimg {
+	width:  100px;
+    height: 100px;
+    background-size: cover;
+	display:inline-block;
+	transition: width .5s;
+	transition: height .5s;
+}
+
+.skillsimg:hover, .skillsimg:focus{
+
+	width:  120px;
+    height: 120px;
+    background-size: cover;
+	display:inline-block;
+	
+}
+
+/*section education*/
+.sec_education h1{
+		color:rgb(60, 60, 60);
+		text-shadow: 2px 2px 4px rgb(150, 150, 150);
+		font-size:2em;
+		font-weight:600;	
+}
+
+.sec_education h1:after{
+		content: " ";
+		display:block;
+		margin:0 auto;
+		width:3.5%;
+		padding-top:-3px;
+		border-bottom: 2px solid rgb(255, 99, 71);
+}
+
+.sec_education strong{
+	color:#5F9EA0;
+}
+
+
+
+/*section work experience*/
+
+
+
+
+.sec_workexp h1{
+		color:rgb(60, 60, 60);
+		text-shadow: 2px 2px 4px rgb(150, 150, 150);
+		font-size:2em;
+		font-weight:600;	
+}
+.sec_workexp h1:after{
+		content: " ";
+		display:block;
+		margin:0 auto;
+		width:5%;
+		padding-top:-3px;
+		border-bottom: 2px solid rgb(255, 99, 71);
+}
+
+.sec_workexp img{
+	width:  300px;
+    height: 100px;
+    background-size: cover;
+	display:inline-block;
+}
+.sec_workexp span{
+	color:#5F9EA0;
+	font-weight:300;
+	
+}
+.sec_workexp strong{
+	color:#5F9EA0;
+
+}
+
+
+#wcc{
+	width:  100px;
+    height: 100px;
+    background-size: cover;
+	display:inline-block;
+}
+
+/*Contact section*/
+
+.sec_contact h1{
+		color:#5F9EA0;
+		text-shadow: 4px 4px 8px rgb(50, 50, 50);
+		font-size:2em;
+		font-weight:600;
+}
+.sec_contact h1:after{
+		content: " ";
+		display:block;
+		margin:0 auto;
+		width:5%;
+		padding-top:-3px;
+		border-bottom: 2px solid rgb(60, 60, 60);
+}
+
+
+
+#bgdContact{
+	
+	background-image:linear-gradient(to bottom, rgba(255, 99, 71, 0.5), rgba(238, 130, 238, 0.8)), url(../images/contactbackground.jpg);				/*used to apply a gradient similair to home image*/
+	background-position:center;
+	background-size:cover;
+	background-blend-mode:lighten;				/*used to lighten the background image.*/
+
+
+	
+}
+
+.socials{
+	padding-left:5px;
+	width:  40px;
+    height: 40px;
+    background-size: cover;
+	display:inline-block;
+}
+
+
