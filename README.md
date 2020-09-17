@@ -17,4 +17,4 @@ If the user wishes to contact me, the following socials where give; my email, ce
 The user can interact with the facebook and instagram icons which will take the user to the respective webpages
 
 *Update:*
-Added comments and fixed spelling mistakes.
+Added some left out comments and fixed spelling mistakes.
