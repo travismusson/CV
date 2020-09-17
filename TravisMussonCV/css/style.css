@@ -6,11 +6,6 @@ html{
 	scroll-behavior: smooth;		/*ensures smooth scrolling throughout the website*/
 }
 
-
-
-
-
-
 /* selects all images and normalizes them across the board*/
 img {
 	max-width:100%;
@@ -35,18 +30,14 @@ h1{
 .container {
 	width: 95%;
 	margin: 0 auto;
-	max-width:80em;
-
-	
-	
+	max-width:80em;	
 }
 
 .title{
-	
 	font-size: 2rem;
 	font-weight: 500;
-	
 }
+
 .title span{					/*individual emphases on the name*/
 	font-size: 3rem;
 	display : block;
@@ -57,9 +48,7 @@ h1{
 @media (min-width:60rem){
 	.title{
 		font-size :2.5rem;
-	}
-	
-	
+	}	
 }
 
 
@@ -70,8 +59,9 @@ header{
 	position: absolute;
 	width: 100%;
 	margin-top:1em; /* I'll be prodominently using EM and REM as PX is quite ignorant  */ 
-	
 }
+
+
 /*nav bar*/
 .nav_menu{
 	width:100vw;
@@ -82,21 +72,19 @@ header{
 	left:0;
 	background-color:grey;
 	opacity:0.95;
-
 }
 
 .nav_menu ul{
 	list-style:none;		/*makes list not use dots, usefull for making nav look clean*/
 	padding:0;
-	margin:0;
-		
-	
+	margin:0;	
 }
+
 .nav_menu ul li{
 	display:inline-block;
-	line-height:60px;
-	
+	line-height:60px;	
 }
+
 .nav_menu ul li a{
 	
 	font-weight:700;
@@ -105,26 +93,23 @@ header{
 	text-decoration: none;
 	text-transform : uppercase;
 	font-size: 1rem;
-	transition:all .3s ease-in-out;
-
-	
+	transition:all .3s ease-in-out;	
 }
-
 
 .nav_name{
 	text-decoration: underline;
 	position:fixed;
 	top:0;
 	left:75vw;
-
 }
+
+
 /*Hamburger icon and sidebar customization*/
 .ham_menu{
 	display:none;
 	position:fixed;
 	top:0;
 	left:0;
-
 }
 
 .ham_side{
@@ -137,10 +122,9 @@ header{
 	left:0;
 	background-color:grey;
 	opacity:0.95;
-	transition:all .2s ease-in-out;
-
-	
+	transition:all .2s ease-in-out;	
 }
+
 .ham_name{
 	text-decoration: underline;
 }
@@ -151,8 +135,8 @@ header{
 	list-style:none;
 	overflow:hidden;
 	visibility:hidden;
-
 }
+
 .ham_side ul li a{
 	white-space:nowrap;	
 	font-weight:700;
@@ -172,7 +156,7 @@ header{
 }
 
 
-@media (max-width:45.625em){
+@media (max-width:45.625em){		/*Mobile view for displaying the mobile nav bar and hiding the normal nav bar*/
 		.nav_menu{
 		display:none;
 	}
@@ -195,11 +179,11 @@ header{
 
 	
 }
-.nav_menu a:hover, .nav_menu:focus{
+.nav_menu a:hover, .nav_menu:focus{		/*added effect for an enhaced user experience*/
 	color: #ADD8E6;
 	
 }
-.ham_side a:hover, .ham_side:focus{
+.ham_side a:hover, .ham_side:focus{		/*added effect for an enhaced user experience*/
 	color: #ADD8E6;
 }
 
@@ -215,30 +199,28 @@ header{
 	padding: 10em 0;
 	color:rgb(60,60,60);
 }
+
 @media (min-width:60rem){		/*When screensize is more than 60 rem(960px) change the layout of the front screen*/
 	.sec_home {
 		height:100vh;
-		padding-top: 35vh;
-		
+		padding-top: 35vh;		
 	}	
 }
+
 .bio span{
 	color:#5F9EA0;
-	
 }
 
 
 /*section about*/
-	.sec_about{	
-	}
 
 .sec_about h1{
 	color:rgb(60, 60, 60);
-	text-shadow: 2px 2px 4px rgb(150, 150, 150);
+	text-shadow: 2px 2px 4px rgb(150, 150, 150);		/*Makes headings look more detailed by adding a shadow*/
 	font-size:2em;
 	font-weight:600;
 }
-.sec_about h1:after{
+.sec_about h1:after{			/*Adds underline effect to headings*/
 		content: " ";
 		display:block;
 		margin:0 auto;
@@ -257,22 +239,20 @@ header{
 	background-blend-mode:lighten;				/*used to lighten the background image.*/
 	}
 
-
-
 .sec_skills{
 		display:inline-block;
 		margin:0;
 		padding:0;
 }
 
-.sec_skills h1{
+.sec_skills h1{	
 		color:#5F9EA0;
 		text-shadow: 4px 4px 8px rgb(50, 50, 50);
 		font-size:2em;
 		font-weight:600;	
 }
 
-.sec_skills h1:after{
+.sec_skills h1:after{		/*Adds underline effect to headings*/
 		content: " ";
 		display:block;
 		margin:0 auto;
@@ -301,26 +281,25 @@ header{
 
 .skillsimg {
 	width:  100px;
-    height: 100px;
-    background-size: cover;
+  	height: 100px;
+	background-size: cover;
 	display:inline-block;
-	transition: width .5s;
-	transition: height .5s;
+	transition: width .5s;		/*Adds smooth transition when changing the width*/
+	transition: height .5s;		/*Adds smooth transition when changing the height*/
 }
 
-.skillsimg:hover, .skillsimg:focus{
-
+.skillsimg:hover, .skillsimg:focus{		/* Increases size of image to ppear more interactive*/
 	width:  120px;
-    height: 120px;
-    background-size: cover;
-	display:inline-block;
-	
+   	height: 120px;
+   	background-size: cover;
+	display:inline-block;	
 }
+
 
 /*section education*/
 .sec_education h1{
 		color:rgb(60, 60, 60);
-		text-shadow: 2px 2px 4px rgb(150, 150, 150);
+		text-shadow: 2px 2px 4px rgb(150, 150, 150);		/*Makes headings look more detailed by adding a shadow*/
 		font-size:2em;
 		font-weight:600;	
 }
@@ -347,7 +326,7 @@ header{
 
 .sec_workexp h1{
 		color:rgb(60, 60, 60);
-		text-shadow: 2px 2px 4px rgb(150, 150, 150);
+		text-shadow: 2px 2px 4px rgb(150, 150, 150);		/*Makes headings look more detailed by adding a shadow*/
 		font-size:2em;
 		font-weight:600;	
 }
@@ -362,25 +341,24 @@ header{
 
 .sec_workexp img{
 	width:  300px;
-    height: 100px;
-    background-size: cover;
+    	height: 100px;
+  	background-size: cover;
 	display:inline-block;
 }
+
 .sec_workexp span{
 	color:#5F9EA0;
 	font-weight:300;
-	
 }
+
 .sec_workexp strong{
 	color:#5F9EA0;
-
 }
-
 
 #wcc{
 	width:  100px;
-    height: 100px;
-    background-size: cover;
+	height: 100px;
+	background-size: cover;
 	display:inline-block;
 }
 
@@ -388,7 +366,7 @@ header{
 
 .sec_contact h1{
 		color:#5F9EA0;
-		text-shadow: 4px 4px 8px rgb(50, 50, 50);
+		text-shadow: 4px 4px 8px rgb(50, 50, 50);		/*Makes headings look more detailed by adding a shadow*/
 		font-size:2em;
 		font-weight:600;
 }
@@ -401,25 +379,18 @@ header{
 		border-bottom: 2px solid rgb(60, 60, 60);
 }
 
-
-
 #bgdContact{
 	
 	background-image:linear-gradient(to bottom, rgba(255, 99, 71, 0.5), rgba(238, 130, 238, 0.8)), url(../images/contactbackground.jpg);				/*used to apply a gradient similair to home image*/
 	background-position:center;
 	background-size:cover;
-	background-blend-mode:lighten;				/*used to lighten the background image.*/
-
-
-	
+	background-blend-mode:lighten;				/*used to lighten the background image.*/	
 }
 
 .socials{
 	padding-left:5px;
 	width:  40px;
-    height: 40px;
-    background-size: cover;
+	height: 40px;
+	background-size: cover;
 	display:inline-block;
 }
-
-
