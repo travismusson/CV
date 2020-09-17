@@ -16,5 +16,5 @@ The user should be able to click on the hamburger icon(3 bars) when in mobile vi
 If the user wishes to contact me, the following socials where give; my email, cellphone, instagram and facebook.
 The user can interact with the facebook and instagram icons which will take the user to the respective webpages
 
-*Update*
+*Update:*
 Added comments and fixed spelling mistakes.
