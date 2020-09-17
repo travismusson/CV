@@ -15,3 +15,6 @@ The buttons allow for quicker access around the website.
 The user should be able to click on the hamburger icon(3 bars) when in mobile view to access these buttons.
 If the user wishes to contact me, the following socials where give; my email, cellphone, instagram and facebook.
 The user can interact with the facebook and instagram icons which will take the user to the respective webpages
+
+*Update*
+Added comments and fixed spelling mistakes.
